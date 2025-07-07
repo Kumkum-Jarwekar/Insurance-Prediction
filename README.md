@@ -35,8 +35,6 @@ Trained **Linear Regression** on:
 - **Features:** `age`, `bmi`, `smoker`
 - **Target:** `charges`
 
-> Other columns like `sex`, `region`, and `children` are not used in the deployed app.
-
 ---
 
 ## 🚀 Live Demo
