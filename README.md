@@ -1,75 +1,97 @@
-🚑 Insurance Charges Prediction
-A simple Machine Learning project to predict medical insurance charges based on age, BMI, and smoking status using Linear Regression and a Streamlit app.
+# 🚑 Insurance Charges Prediction
 
-📂 Project Files
-Copy
-Edit
+A simple **Machine Learning project** to predict **medical insurance charges** based on **age, BMI, and smoking status** using **Linear Regression** and a **Streamlit app**.
+
+---
+
+## 📂 Project Files
+
+```
 insurance-prediction/
 ├── insurance.csv
 ├── insurance_prediction.ipynb
-├── app.py
+├── insurance_prediction_app.py
 ├── linear_model.pkl
 ├── requirements.txt
 └── README.md
-📊 Dataset: insurance.csv
-Columns used for prediction in app:
+```
 
-age
+---
 
-bmi
+## 📊 Dataset: `insurance.csv`
 
-smoker
+**Columns used for prediction in the app:**
 
-📈 Model
-Trained Linear Regression on:
+- `age`
+- `bmi`
+- `smoker`
 
-Features: age, bmi, smoker
+---
 
-Target: charges
+## 📈 Model
 
-Other columns like sex, region, and children are not used in the prediction logic of the deployed app.
+Trained **Linear Regression** on:
 
-🚀 Live Demo
-✅ Try the app here!
+- **Features:** `age`, `bmi`, `smoker`
+- **Target:** `charges`
 
-⚙️ How to Run Locally
-bash
-Copy
-Edit
+> Other columns like `sex`, `region`, and `children` are not used in the deployed app.
+
+---
+
+## 🚀 Live Demo
+
+✅ [Try the app here!](https://insurance-prediction-irgn2x5pkxagrigkgnqmdv.streamlit.app/)
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
 git clone https://github.com/your-username/insurance-prediction.git
 cd insurance-prediction
 pip install -r requirements.txt
-streamlit run app.py
-🔍 How it Works
-The Streamlit app collects:
+streamlit run insurance_prediction_app.py
+```
 
-Age
+---
 
-BMI
+## 🔍 How it Works
 
-Smoker status (yes/no)
+The **Streamlit app**:
 
-The app encodes smoker as smoker_yes = 1 or 0.
+- Collects:
+  - Age
+  - BMI
+  - Smoker status (yes/no)
+- Encodes `smoker` as `smoker_yes = 1` (yes) or `0` (no).
+- Feeds `age`, `bmi`, `smoker_yes` to the trained model.
+- Displays **predicted insurance charges** instantly.
 
-Feeds age, bmi, smoker_yes to the trained model.
+---
 
-Displays predicted insurance charges.
+## 🖥️ Requirements
 
-🖥️ Requirements
-nginx
-Copy
-Edit
-streamlit
-scikit-learn
-pandas
-numpy
-matplotlib
-🎯 Improvements
-Add more features like children, region, sex to the model.
+- `streamlit`
+- `scikit-learn`
+- `pandas`
+- `numpy`
+- `matplotlib`
 
-Try other models for better accuracy.
+---
 
-Deploy with version control for updates.
+## 🎯 Improvements
 
-🤝 Contributing
+- Add more features (`children`, `region`, `sex`) to the model.
+- Try advanced models for better accuracy.
+- Add visualizations inside the app.
+- Deploy with version control for updates.
+
+---
+
+## 🤝 Contributing
+
 Feel free to fork, improve, and open PRs!
+
+---
+
