@@ -58,15 +58,29 @@ streamlit run insurance_prediction_app.py
 
 ## 🔍 How it Works
 
-The **Streamlit app**:
+The **Streamlit app** collects:
 
-- Collects:
-  - Age
-  - BMI
-  - Smoker status (yes/no)
-- Encodes `smoker` as `smoker_yes = 1` (yes) or `0` (no).
-- Feeds `age`, `bmi`, `smoker_yes` to the trained model.
-- Displays **predicted insurance charges** instantly.
+- Age
+- BMI
+- Number of Children
+- Sex
+- Smoker status
+- Region
+
+**However, the current model only uses:**
+
+- Age
+- BMI
+- Smoker status (encoded as `1` for yes, `0` for no)
+
+to predict insurance charges.
+
+The other fields are collected for potential **future model improvements and feature engineering**.
+
+When the user clicks **Predict**, the app:
+
+✅ Feeds `age`, `bmi`, `smoker` to the trained Linear Regression model  
+✅ Predicts and displays **estimated insurance charges instantly**  
 
 ---
 
